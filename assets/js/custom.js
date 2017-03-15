@@ -12,11 +12,11 @@ jQuery(document).ready(function ($) {
 	*	Current Page Active
 	*
 	------------------------------------*/
-	$("[href]").each(function() {
-    if (this.href == window.location.href) {
-        $(this).addClass("active");
-        }
-	});
+	// $("[href]").each(function() {
+ //    if (this.href == window.location.href) {
+ //        $(this).addClass("active");
+ //        }
+	// });
 
 	/*
 	*
