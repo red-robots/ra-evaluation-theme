@@ -1,0 +1,143 @@
+* { -webkit-hyphens: none; }
+div {
+	/* These are technically the same, but use both */
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+	-ms-word-break: break-all;
+	/* This is the dangerous one in WebKit, as it breaks things wherever */
+	word-break: break-all;
+	/* Instead use this non-standard one: */
+	word-break: break-word;
+
+	/* Adds a hyphen where the word breaks, if supported (No Blink) */
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+.clear {clear: both;}
+.wrapper {
+	width: 100%;
+	margin: 0px auto;
+	padding: 20px;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 100%;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 1200px;
+		padding: 0px;
+	}
+}
+
+.content-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 66%;
+		float: left;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+
+.widget-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 26%;
+		float: right;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+header#masthead {
+	width: 220px;
+	text-align: center;
+	
+	float: left;
+	@media screen and (min-width: $tabwidth) {
+		height: 100vh;
+		border-right: 3px solid $color-blue;
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		height: 100vh;
+	}
+	.head-top {
+		padding: 10px;
+	}
+}
+#content {
+	width: 100%;
+	float: left;
+	@media screen and (min-width: $tabwidth) {
+		width: 70%;
+		margin: 0 0 0 225px;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 80%;
+	}
+}
+.skeleton-front-wrap {
+	width: 100%;
+	float: left;
+}
+/* Logo */
+.logo , h1.logo {
+	width: 200px;
+	height: 200px;
+	background-image: url(images/HUH-logo.png);	
+	margin: 10px auto;
+
+	@media screen and (min-width: $tabwidth) {
+		width: 200px;
+		height: 200px;
+		float: left;
+		margin: 0 0 40px 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+.logo a, h1.logo a {
+	width: 200px;
+	height: 200px;
+	display: block;
+	text-indent: -9000px;
+
+	@media screen and (min-width: $tabwidth) {
+		width: 200px;
+		height: 200px;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+footer.head-footer {
+	width: 100%;
+	clear: both;
+	background-color: rgba($color-blue, 1);
+	color: #fff;
+	padding: 20px 0;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.site-info {
+	color: #fff;
+	font-size: 12px;
+	a {
+		color: rgba(0,0,0,.4);
+	}
+}

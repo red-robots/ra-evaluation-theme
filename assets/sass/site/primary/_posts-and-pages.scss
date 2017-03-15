@@ -1,0 +1,58 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+.ra-button {
+	width: 80%;
+	margin: 0 auto 20px auto;
+	display: inline-block;
+	text-align: center;
+	font-size: 12px;
+	a {
+		width: 100%;
+		padding: 15px 0px;
+		display: block;
+		background-color: $color-blue;
+		color: $color-paper ;
+		border-radius: 8px;
+		text-decoration: none;
+		@include transition(all ease .3s);
+		-webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0);
+-moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0);
+box-shadow: 0px 0px 16px 0px rgba(0,0,0,0);
+transform: scale(1);
+
+		&:hover {
+			// background-color: $color-silk;
+			-webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.57);
+box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.57);
+transform: scale(1.03);
+
+		}
+	}
+}
