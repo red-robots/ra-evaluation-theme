@@ -56,15 +56,15 @@ jQuery(document).ready(function ($) {
 	*	Isotope with Images Loaded
 	*
 	------------------------------------*/
-	var $container = $('#container').imagesLoaded( function() {
-  	$container.isotope({
-    // options
-	 itemSelector: '.item',
-		  masonry: {
-			gutter: 15
-			}
- 		 });
-	});
+	// var $container = $('#container').imagesLoaded( function() {
+ //  	$container.isotope({
+ //    // options
+	//  itemSelector: '.item',
+	// 	  masonry: {
+	// 		gutter: 15
+	// 		}
+ // 		 });
+	// });
 
 	/*
 	*
@@ -78,14 +78,7 @@ jQuery(document).ready(function ($) {
 	    return false;
 	});
 
-	/*
-	*
-	*	Nice Page Scroll
-	*
-	------------------------------------*/
-	$(function(){	
-		$("html").niceScroll();
-	});
+	
 	
 	
 	/*
