@@ -36,9 +36,9 @@ jQuery(document).ready(function ($) {
 	*	Flexslider
 	*
 	------------------------------------*/
-	$('.flexslider').flexslider({
-		animation: "slide",
-	}); // end register flexslider
+	// $('.flexslider').flexslider({
+	// 	animation: "slide",
+	// }); // end register flexslider
 	
 	/*
 	*
