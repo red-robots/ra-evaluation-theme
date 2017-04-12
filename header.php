@@ -55,7 +55,7 @@
 
 			</div><!-- head top -->
 		<footer id="colophon" class="head-footer" role="contentinfo">
-				
+            <a href="<?php echo wp_logout_url();?>">Logout</a>
 			<div class="site-info">
 				© <?php echo date('Y'); ?> Howard University Hospital
 			</div><!-- .site-info -->

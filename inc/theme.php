@@ -175,3 +175,4 @@ function ac_first_and_last_menu_class($items) {
 add_filter('wp_nav_menu_objects', 'ac_first_and_last_menu_class');
 
 show_admin_bar(false);
+
