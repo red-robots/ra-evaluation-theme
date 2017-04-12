@@ -44,11 +44,11 @@
 			</nav> #site-navigation -->
 
 			<div class="ra-button">
-				<a href="#">New Evalutation</a>
+				<a href="<?php bloginfo('url'); ?>">New Evalutation</a>
 			</div>
 
 			<div class="ra-button">
-				<a href="#">Reset Evalutation</a>
+				<a href="<?php bloginfo('url'); ?>">Reset Evalutation</a>
 			</div>
 
 			
