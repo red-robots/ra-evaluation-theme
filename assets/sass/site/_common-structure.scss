@@ -59,11 +59,11 @@ div {
 	}
 }
 header#masthead {
-	width: 220px;
-	text-align: center;
-	
-	float: left;
-	@media screen and (min-width: $tabwidth) {
+  width: 100%;
+  @media screen and (min-width: $midwidth) {
+        width: 220px;
+        float: left;
+        text-align: center;
 		height: 100vh;
 		border-right: 3px solid $color-blue;
 		position: fixed;
@@ -79,9 +79,9 @@ header#masthead {
 }
 #content {
 	width: 100%;
-	float: left;
-	@media screen and (min-width: $tabwidth) {
+	@media screen and (min-width: $midwidth) {
 		width: 70%;
+        float: left;
 		margin: 0 0 0 225px;
 	}
 	@media screen and (min-width: $deskwidth) {
@@ -99,7 +99,7 @@ header#masthead {
 	background-image: url(images/HUH-logo.png);	
 	margin: 10px auto;
 
-	@media screen and (min-width: $tabwidth) {
+	@media screen and (min-width: $midwidth) {
 		width: 200px;
 		height: 200px;
 		float: left;
@@ -115,7 +115,7 @@ header#masthead {
 	display: block;
 	text-indent: -9000px;
 
-	@media screen and (min-width: $tabwidth) {
+	@media screen and (min-width: $midwidth) {
 		width: 200px;
 		height: 200px;
 	}
@@ -130,9 +130,11 @@ footer.head-footer {
 	color: #fff;
 	padding: 20px 0;
 	text-align: center;
-	position: absolute;
-	bottom: 0;
-	left: 0;
+    @media screen and (min-width: $midwidth) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
   a {
     color: inherit;
     font-size: 12px;

@@ -29,10 +29,14 @@
 .ra-button {
 	width: 80%;
 	margin: 0 auto 20px auto;
-	display: inline-block;
+	display: block;
 	text-align: center;
 	font-size: 12px;
-	a {
+
+  @media screen and (min-width: $midwidth) {
+    display: inline-block;
+  }
+  a {
 		width: 100%;
 		padding: 15px 0px;
 		display: block;
