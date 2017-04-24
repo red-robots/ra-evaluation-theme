@@ -60,3 +60,28 @@ transform: scale(1.03);
 		}
 	}
 }
+.template-blank {
+  #content, #primary {
+    width: 100%;
+    margin: 0;
+  }
+  .login-form {
+    width: 80%;
+    padding: 2%;
+    margin: 10% auto;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 0 25px lightgrey;
+    border-radius: 10px;
+    max-width: 600px;
+    form {
+      label {
+        display: block;
+
+      }
+      input {
+        max-width: 100%;
+      }
+    }
+  }
+}

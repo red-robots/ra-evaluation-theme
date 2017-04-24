@@ -1427,6 +1427,10 @@ footer.head-footer{width:100%;clear:both;background-color:#083b66;color:#fff;pad
 @media screen and (min-width:900px){.ra-button{display:inline-block}
 }.ra-button a{width:100%;padding:15px 0;display:block;background-color:#083b66;color:#f4f4f4;border-radius:8px;text-decoration:none;-webkit-transition:all ease .3s;transition:all ease .3s;box-shadow:0 0 16px 0 transparent;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}
 .ra-button a:hover{box-shadow:0 0 50px 0 rgba(0,0,0,0.57);-webkit-transform:scale(1.03);-ms-transform:scale(1.03);transform:scale(1.03)}
+.template-blank #content,.template-blank #primary{width:100%;margin:0}
+.template-blank .login-form{width:80%;padding:2%;margin:10% auto;background-color:white;text-align:center;box-shadow:0 0 25px lightgrey;border-radius:10px;max-width:600px}
+.template-blank .login-form form label{display:block}
+.template-blank .login-form form input{max-width:100%}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
